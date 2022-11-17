@@ -39,7 +39,7 @@ export default function Show() {
           <p>{show.description}</p>
           <ul>
             {show.episodes.map((item, index) => (
-              <li>
+              <li key={index}>
                 <Link to={`episodes/${index}`} state={item}>
                   {item.title}
                 </Link>
